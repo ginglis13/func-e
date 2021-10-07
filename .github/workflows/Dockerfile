@@ -22,7 +22,7 @@
 #
 # You can troubleshoot like this:
 # ```bash
-# $ docker run -it --entrypoint /bin/bash --rm func-e-internal:centos-8
+# $ docker run --rm -it -v $PWD:/work --entrypoint /bin/bash func-e-internal:centos-8
 # ```
 ARG parent_image=centos:8
 
